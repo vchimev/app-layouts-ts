@@ -5,15 +5,16 @@ https://docs.nativescript.org/ui/professional-ui-components/SideDrawer/getting-s
 -->
 <nsDrawer:RadSideDrawer id="sideDrawer" xmlns:nsDrawer="nativescript-ui-sidedrawer" loaded="onLoaded">
     <nsDrawer:RadSideDrawer.drawerTransition>
-        <nsDrawer:SlideInOnTopTransition/>
+        <nsDrawer:SlideInOnTopTransition />
     </nsDrawer:RadSideDrawer.drawerTransition>
 
     <nsDrawer:RadSideDrawer.drawerContent>
         <GridLayout rows="auto, *" class="sidedrawer sidedrawer-left">
             <StackLayout class="sidedrawer-header">
-                <Label class="sidedrawer-header-image fa" text="&#xf2bd;" />
-                <Label class="sidedrawer-header-brand" text="User Name" />
-                <Label class="footnote" text="username@mail.com" />
+                <!-- <Label class="sidedrawer-header-image fa" text="&#xf2bd;" /> -->
+                <!-- <Label class="sidedrawer-header-brand" text="User Name" /> -->
+                <!-- <Label class="footnote" text="username@mail.com" /> -->
+                <Label class="sidedrawer-header-brand" text="NativeScript Layouts" />
             </StackLayout>
 
             <ScrollView row="1">
@@ -44,17 +45,30 @@ https://docs.nativescript.org/ui/professional-ui-components/SideDrawer/getting-s
 
                     <StackLayout class="hr-light"></StackLayout>
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Settings' ? ' selected': '') }}"
-                        route="settings/settings-page" title="Settings" tap="onNavigationItemTap">
-                        <Label row="0" col="0" text="&#xf013;" class="fa" />
-                        <Label row="0" col="1" text="Settings" class="p-r-10" />
+                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Absolute' ? ' selected': '') }}"
+                        route="absolute/absolute-page" title="Absolute" tap="onNavigationItemTap">
+                        <!-- <Label row="0" col="0" text="&#xf013;" class="fa" /> -->
+                        <Label row="0" col="1" text="Absolute" class="p-r-10" />
                     </GridLayout>
+
+                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Dock' ? ' selected': '') }}"
+                        route="dock/dock-page" title="Dock" tap="onNavigationItemTap">
+                        <!-- <Label row="0" col="0" text="&#xf013;" class="fa" /> -->
+                        <Label row="0" col="1" text="Dock" class="p-r-10" />
+                    </GridLayout>
+
+                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Cuteness' ? ' selected': '') }}"
+                        route="cuteness/main-page" title="Cuteness" tap="onNavigationItemTap">
+                        <!-- <Label row="0" col="0" text="&#xf013;" class="fa" /> -->
+                        <Label row="0" col="1" text="Cuteness" class="p-r-10" />
+                    </GridLayout>
+
                 </StackLayout>
             </ScrollView>
         </GridLayout>
     </nsDrawer:RadSideDrawer.drawerContent>
 
     <nsDrawer:RadSideDrawer.mainContent>
-        <Frame defaultPage="home/home-page"></Frame>
+        <Frame defaultPage="cuteness/main-page"></Frame>
     </nsDrawer:RadSideDrawer.mainContent>
 </nsDrawer:RadSideDrawer>
