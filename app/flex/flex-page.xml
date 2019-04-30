@@ -1,0 +1,29 @@
+<Page
+    class="page"
+    navigatingTo="onNavigatingTo"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <NavigationButton ios:visibility="collapsed" icon="res://menu" tap="onDrawerButtonTap"></NavigationButton>
+        <ActionItem icon="res://navigation/menu"
+            android:visibility="collapsed"
+            tap="onDrawerButtonTap"
+            ios.position="left">
+        </ActionItem>
+        <Label class="action-bar-title" text="Flex"></Label>
+    </ActionBar>
+
+    <FlexboxLayout alignItems="center" justifyContent="space-between">
+        <Label text="Label 1" backgroundColor="lightPink"
+            height="100" width="75"></Label>
+
+        <Label text="Label 2" backgroundColor="lightBlue"
+            height="80" width="75"></Label>
+
+        <Label text="Label 3" backgroundColor="lightGreen"
+            height="140" width="75"></Label>
+
+        <Label text="Label 4" backgroundColor="lightGray"
+            height="70" width="75"></Label>
+    </FlexboxLayout>
+</Page>
