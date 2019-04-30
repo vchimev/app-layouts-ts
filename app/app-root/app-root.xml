@@ -58,6 +58,12 @@ https://docs.nativescript.org/ui/professional-ui-components/SideDrawer/getting-s
                     </GridLayout>
 
                     <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Cuteness' ? ' selected': '') }}"
+                        route="grid/grid-page" title="Grid" tap="onNavigationItemTap">
+                        <!-- <Label row="0" col="0" text="&#xf013;" class="fa" /> -->
+                        <Label row="0" col="1" text="Grid" class="p-r-10" />
+                    </GridLayout>
+
+                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Cuteness' ? ' selected': '') }}"
                         route="cuteness/main-page" title="Cuteness" tap="onNavigationItemTap">
                         <!-- <Label row="0" col="0" text="&#xf013;" class="fa" /> -->
                         <Label row="0" col="1" text="Cuteness" class="p-r-10" />
@@ -69,6 +75,6 @@ https://docs.nativescript.org/ui/professional-ui-components/SideDrawer/getting-s
     </nsDrawer:RadSideDrawer.drawerContent>
 
     <nsDrawer:RadSideDrawer.mainContent>
-        <Frame defaultPage="cuteness/main-page"></Frame>
+        <Frame defaultPage="grid/grid-page"></Frame>
     </nsDrawer:RadSideDrawer.mainContent>
 </nsDrawer:RadSideDrawer>
