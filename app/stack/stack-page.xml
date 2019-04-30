@@ -1,0 +1,22 @@
+<Page
+    class="page"
+    navigatingTo="onNavigatingTo"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <NavigationButton ios:visibility="collapsed" icon="res://menu" tap="onDrawerButtonTap"></NavigationButton>
+        <ActionItem icon="res://navigation/menu"
+            android:visibility="collapsed"
+            tap="onDrawerButtonTap"
+            ios.position="left">
+        </ActionItem>
+        <Label class="action-bar-title" text="Stack"></Label>
+    </ActionBar>
+
+    <StackLayout orientation="vertical">
+        <Button text="Button 1" backgroundColor="lightPink" margin="8"></Button>
+        <Button text="Button 2" backgroundColor="lightBlue" margin="8"></Button>
+        <Button text="Button 3" backgroundColor="lightGreen" margin="8"></Button>
+    </StackLayout>
+
+</Page>
