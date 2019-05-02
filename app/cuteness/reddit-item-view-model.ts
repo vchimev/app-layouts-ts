@@ -81,10 +81,10 @@ export class RedditViewModel extends Observable {
         if (this._source) {
             let url;
             try {
-                url = (<any>this._source).preview.images[0].source.url;
+                url = this._source.url;
             }
             catch (e) {
-                url = this._source.url;
+                throw new Error("Failed to get source url.");
             }
 
             if (_isValidImageUrl(url)) {
