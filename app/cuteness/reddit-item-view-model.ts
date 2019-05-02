@@ -4,12 +4,12 @@ import { ImageSource, fromFile as imageSourceFromFile, fromUrl as imageSourceFro
 import { ItemData } from "./reddit-model";
 import { defaultThumbnailImageSource, defaultNoThumbnailImageSource, cache } from "./reddit-app-view-model";
 
-var firstThumbnailImageSource = imageSourceFromFile("~/cuteness/res/first-image.png");
-var defaultImageSource = imageSourceFromFile("~/cuteness/res/reddit-logo-transparent.png");
+let firstThumbnailImageSource = imageSourceFromFile("~/cuteness/res/first-image.png");
+let defaultImageSource = imageSourceFromFile("~/cuteness/res/reddit-logo-transparent.png");
 
-var ISLOADING = "isLoading";
-var THUMBNAIL_IMAGE = "thumbnailImage";
-var IMAGE_SOURCE = "imageSource";
+let ISLOADING = "isLoading";
+let THUMBNAIL_IMAGE = "thumbnailImage";
+let IMAGE_SOURCE = "imageSource";
 
 export class RedditViewModel extends Observable {
 
@@ -20,7 +20,7 @@ export class RedditViewModel extends Observable {
         this._source = source;
 
         if (this._source) {
-            var property: string;
+            let property: string;
             for (property in this._source) {
                 this.set(property, this._source[property]);
             }
@@ -51,13 +51,13 @@ export class RedditViewModel extends Observable {
             return firstThumbnailImageSource;
         }
 
-        var url = this._source.thumbnail;
+        let url = this._source.thumbnail;
 
         if (!_isValidImageUrl(url)) {
             return defaultNoThumbnailImageSource
         }
 
-        var image = cache.get(url);
+        let image = cache.get(url);
         if (image) {
             return image;
         }
@@ -79,7 +79,7 @@ export class RedditViewModel extends Observable {
 
     get imageSource(): ImageSource {
         if (this._source) {
-            var url;
+            let url;
             try {
                 url = (<any>this._source).preview.images[0].source.url;
             }

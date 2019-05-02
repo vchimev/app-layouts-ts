@@ -6,16 +6,16 @@ import { Cache as ImageCache } from "tns-core-modules/ui/image-cache";
 import { Data as RedditData } from "./reddit-model";
 import { RedditViewModel } from "./reddit-item-view-model";
 
-var aboutText = "Cuteness is a proof of concept app demonstrating the Telerik's NativeScript for writing native mobile applications using JavaScript.";
-export var defaultThumbnailImageSource = imageSourceFromFile("~/cuteness/res/reddit-logo.png");
-export var defaultNoThumbnailImageSource = imageSourceFromFile("~/cuteness/res/no-image.png");
+let aboutText = "Cuteness is a proof of concept app demonstrating the Telerik's NativeScript for writing native mobile applications using JavaScript.";
+export let defaultThumbnailImageSource = imageSourceFromFile("~/cuteness/res/reddit-logo.png");
+export let defaultNoThumbnailImageSource = imageSourceFromFile("~/cuteness/res/no-image.png");
 
-var redditUrl = "https://www.reddit.com/r/aww.json?limit=";
-var after: string;
-var ISSCROLLING = "isLoading";
+let redditUrl = "https://www.reddit.com/r/aww.json?limit=";
+let after: string;
+let ISSCROLLING = "isLoading";
 
 // initialize the image cache for the main list
-export var cache = new ImageCache();
+export let cache = new ImageCache();
 cache.placeholder = defaultThumbnailImageSource;
 cache.maxRequests = 5;
 
@@ -30,13 +30,13 @@ export class AppViewModel extends Observable {
 
                 fetch(redditUrl + args.count + (after ? "&after=" + after : "")).then<RedditData>(response => response.json()).then(result => {
 
-                    var itemsToLoad = result.data.children.map(i => {
+                    let itemsToLoad = result.data.children.map(i => {
                         return new RedditViewModel(i.data);
                     });
 
                     this._redditItems.load(args.index, itemsToLoad);
 
-                    var lastItem = itemsToLoad[itemsToLoad.length - 1];
+                    let lastItem = itemsToLoad[itemsToLoad.length - 1];
                     if (lastItem) {
                         after = itemsToLoad[itemsToLoad.length - 1].source.name;
                     }
