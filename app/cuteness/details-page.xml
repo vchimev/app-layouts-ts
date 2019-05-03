@@ -1,6 +1,8 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onLoaded">
 
-    <ActionBar class="action-bar"></ActionBar>
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Details"></Label>
+    </ActionBar>
 
     <GridLayout rows="*, auto">
         <ScrollView>
