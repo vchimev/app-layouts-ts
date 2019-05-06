@@ -12,8 +12,8 @@ https://docs.nativescript.org/ui/professional-ui-components/SideDrawer/getting-s
         <GridLayout rows="auto, *" class="sidedrawer sidedrawer-left">
             <StackLayout class="sidedrawer-header">
                 <Label class="sidedrawer-header-image fa" text="&#xf2bd;" />
-                <Label class="sidedrawer-header-brand" text="User Name" />
-                <Label class="footnote" text="username@mail.com" />
+                <Label class="sidedrawer-header-brand" text="Vasil Chimev" />
+                <Label class="footnote" text="vasil.chimev@progress.com" />
             </StackLayout>
 
             <ScrollView row="1">
