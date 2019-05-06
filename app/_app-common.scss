@@ -2,11 +2,12 @@
 // This is where the vast majority of your CSS code goes.
 /* Font icon class*/
 .fa {
-   font-family: "FontAwesome";
+    font-family: "FontAwesome";
 }
+
 // Common page class
 .page-content {
-    
+
     .page-placeholder {
         color: $page-icon-color;
         font-size: $page-content-placeholder-font-size;
@@ -28,3 +29,53 @@ ActionBar .action-bar-title {
     horizontal-align: center;
 }
 
+// Animations
+.layout-container {
+    margin: 20 10 20 10;
+}
+
+.android-layout-container {
+    margin: 2 10 20 10;
+}
+
+@keyframes play {
+    from {
+        opacity: 0.5;
+        transform: scale(0.5, 0.5);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1, 1.1);
+        animation-timing-function: ease-out;
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+.btn {
+    margin: 2;
+    padding: 20;
+    opacity: 0;
+}
+
+.btn-animated {
+    margin: 2;
+    padding: 20;
+    animation-name: play;
+    animation-duration: 1;
+    transform: scale(0.5, 0.5);
+    animation-fill-mode: forwards;
+}
+
+.btn-animated2 {
+    margin: 2;
+    padding: 20;
+    animation-name: play;
+    animation-duration: 1;
+    transform: scale(0.5, 0.5);
+    animation-fill-mode: forwards;
+}

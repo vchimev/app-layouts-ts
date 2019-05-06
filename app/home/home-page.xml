@@ -26,7 +26,7 @@
     <GridLayout class="page-content">
         <!-- <Label class="page-icon fa" text="&#xf015;"></Label> -->
         <!-- <Label class="page-placeholder" text="Page content goes here"></Label> -->
-        <Label class="page-placeholder" text="Hey there!"></Label>
+        <Label class="page-placeholder" text="Hey ProgressNEXT!"></Label>
     </GridLayout>
     <!-- </StackLayout> -->
 </Page>

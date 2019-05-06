@@ -13,12 +13,12 @@
         <Label class="action-bar-title" text="Dock"></Label>
     </ActionBar>
 
-    <DockLayout stretchLastChild="true">
-        <Button dock="Left" text="left" backgroundColor="lightPink" padding="20" />
-        <Button dock="Top" text="top" backgroundColor="lightBlue" padding="20" />
-        <Button dock="Right" text="right" backgroundColor="lightGreen" padding="20" />
-        <Button dock="Bottom" text="bottom" backgroundColor="lightGray" padding="20" />
-        <Button text="Fill" backgroundColor="lightYellow"/>
+    <DockLayout id="container" class="layout-container" stretchLastChild="true">
+        <Button dock="Left" text="left" backgroundColor="lightPink" tap="onTap" />
+        <Button dock="Top" text="top" backgroundColor="lightBlue" tap="onTap" />
+        <Button dock="Right" text="right" backgroundColor="lightGreen" tap="onTap" />
+        <Button dock="Bottom" text="bottom" backgroundColor="lightGray" tap="onTap" />
+        <Button text="fill" backgroundColor="lightYellow" tap="onTap" />
     </DockLayout>
 
 </Page>
