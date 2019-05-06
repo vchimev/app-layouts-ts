@@ -13,10 +13,10 @@
         <Label class="action-bar-title" text="Absolute"></Label>
     </ActionBar>
 
-    <AbsoluteLayout>
-        <Button text="1" left="50" top="50" height="100" width="100" backgroundColor="lightPink" />
-        <Button text="2" left="200" top="100" height="300" width="100" backgroundColor="lightBlue" />
-        <Button text="3" left="75" top="300" height="75" width="150" backgroundColor="lightGreen" />
+    <AbsoluteLayout id="container" class="layout-container">
+        <Button text="1" left="50" top="50" height="100" width="100" backgroundColor="lightPink" tap="onTap" />
+        <Button text="2" left="200" top="100" height="300" width="100" backgroundColor="lightBlue" tap="onTap" />
+        <Button text="3" left="75" top="300" height="75" width="150" backgroundColor="lightGreen" tap="onTap" />
     </AbsoluteLayout>
 
 </Page>
