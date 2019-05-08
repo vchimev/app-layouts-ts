@@ -13,12 +13,12 @@
         <Label class="action-bar-title" text="Grid"></Label>
     </ActionBar>
 
-    <GridLayout rows="*, *, *" columns="100, *, auto">
-        <Button text="1" row="0" col="0" backgroundColor="lightPink" />
-        <Button text="2" row="0" col="1" backgroundColor="lightBlue" />
-        <Button text="3" row="0" rowSpan="2" col="2" backgroundColor="lightGreen" />
-        <Button text="4" row="1" rowSpan="2" col="0" colSpan="2" backgroundColor="lightGray" />
-        <Button text="5" row="2" col="2" backgroundColor="lightYellow" />
+    <GridLayout rows="*, *, *" columns="100, *, auto" id="container" class="layout-container">
+        <Button text="1" row="0" col="0" backgroundColor="lightPink" tap="onTap" />
+        <Button text="2" row="0" col="1" backgroundColor="lightBlue" tap="onTap" />
+        <Button text="3" row="0" rowSpan="2" col="2" backgroundColor="lightGreen" tap="onTap" />
+        <Button text="4" row="1" rowSpan="2" col="0" colSpan="2" backgroundColor="lightGray" tap="onTap" />
+        <Button text="5" row="2" col="2" backgroundColor="lightYellow" tap="onTap" />
     </GridLayout>
 
 </Page>
