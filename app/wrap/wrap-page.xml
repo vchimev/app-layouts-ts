@@ -13,12 +13,13 @@
         <Label class="action-bar-title" text="Wrap"></Label>
     </ActionBar>
 
-    <WrapLayout>
-        <Button text="1" width="150" height="100" backgroundColor="lightPink" margin="8"></Button>
-        <Button text="2" width="100" height="150" backgroundColor="lightBlue" margin="8"></Button>
-        <Button text="3" width="200" height="120" backgroundColor="lightGreen" margin="8"></Button>
-        <Button text="4" width="100" height="50"  backgroundColor="lightGray" margin="8"></Button>
-        <Button text="5" width="250" height="100" backgroundColor="lightYellow" margin="8"></Button>
+    <WrapLayout id="container" class="layout-container">
+    <!-- itemWidth="100" itemHeight="100" -->
+        <Button text="1" width="150" height="100" backgroundColor="lightPink" tap="onTap" />
+        <Button text="2" width="100" height="150" backgroundColor="lightBlue" tap="onTap" />
+        <Button text="3" width="200" height="120" backgroundColor="lightGreen" tap="onTap" />
+        <Button text="4" width="100" height="50"  backgroundColor="lightGray" tap="onTap" />
+        <Button text="5" width="250" height="100" backgroundColor="lightYellow" tap="onTap" />
     </WrapLayout>
 
 </Page>
