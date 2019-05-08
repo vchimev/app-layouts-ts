@@ -13,17 +13,10 @@
         <Label class="action-bar-title" text="Flex"></Label>
     </ActionBar>
 
-    <FlexboxLayout alignItems="center" justifyContent="space-between">
-        <Label text="Label 1" backgroundColor="lightPink"
-            height="100" width="75"></Label>
-
-        <Label text="Label 2" backgroundColor="lightBlue"
-            height="80" width="75"></Label>
-
-        <Label text="Label 3" backgroundColor="lightGreen"
-            height="140" width="75"></Label>
-
-        <Label text="Label 4" backgroundColor="lightGray"
-            height="70" width="75"></Label>
+    <FlexboxLayout flexDirection="row" alignItems="center" justifyContent="space-between" id="container" class="layout-container">
+        <Button text="1" backgroundColor="lightPink" height="100" width="75" tap="onTap" />
+        <Button text="2" backgroundColor="lightBlue" height="80" width="75" tap="onTap" />
+        <Button text="3" backgroundColor="lightGreen" height="140" width="75" tap="onTap" />
+        <Button text="4" backgroundColor="lightGray" height="70" width="75" tap="onTap" />
     </FlexboxLayout>
 </Page>

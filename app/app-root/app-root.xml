@@ -55,7 +55,7 @@ https://docs.nativescript.org/ui/professional-ui-components/SideDrawer/getting-s
                     </GridLayout>
 
                     <GridLayout class="{{ 'sidedrawer-list-item' + (selectedPage === 'Flex' ? ' selected': '') }}"
-                        route="grid/grid-page" title="Flex" tap="onNavigationItemTap">
+                        route="flex/flex-page" title="Flex" tap="onNavigationItemTap">
                         <Label text="Flex" class="p-r-10" paddingLeft="30" />
                     </GridLayout>
 
