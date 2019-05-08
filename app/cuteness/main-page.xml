@@ -44,9 +44,9 @@
 
             <TabViewItem title="About">
                 <TabViewItem.view>
-                    <StackLayout>
-                        <Image margin="10" src="~/cuteness/res/telerik-logo.png" />
-                        <Label margin="10" textWrap="true" text="{{ aboutText }}" />
+                    <StackLayout verticalAlignment="center">
+                        <Image src="~/cuteness/res/progress-logo.png" margin="20" />
+                        <Label textWrap="true" text="{{ aboutText }}" margin="20" />
                     </StackLayout>
                 </TabViewItem.view>
             </TabViewItem>

@@ -6,7 +6,7 @@ import { Cache as ImageCache } from "tns-core-modules/ui/image-cache";
 import { Data as RedditData } from "./reddit-model";
 import { RedditViewModel } from "./reddit-item-view-model";
 
-let aboutText = "Cuteness is a proof of concept app demonstrating the Telerik's NativeScript for writing native mobile applications using JavaScript.";
+let aboutText = "Cuteness is sample app demonstrating the Progress's NativeScript for writing native mobile applications using JavaScript.";
 export let defaultThumbnailImageSource = imageSourceFromFile("~/cuteness/res/reddit-logo.png");
 export let defaultNoThumbnailImageSource = imageSourceFromFile("~/cuteness/res/no-image.png");
 
